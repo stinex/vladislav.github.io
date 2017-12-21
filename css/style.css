@@ -1,0 +1,332 @@
+@charset "UTF-8";
+
+*{
+    margin: 0;
+    padding: 0;
+    outline: none;
+
+}
+html{height: 100%}
+body{
+    
+    width: 100%;
+    height: 100%;
+    color: #9a9a9a;
+    background: #f7f7f7;
+    font-size: 1em;
+    font-family: "Sagoe UI" sans-serif;
+    line-height: 135%;
+}
+a{
+    color: #41cb7f;
+    text-decoration: none;
+    transition: all.4s ease;
+    -moz-transition: all.4s ease;
+    -webkit-transition: all.4s ease;
+    -ms-transition: all.4s ease;
+}
+a:hover{
+    color: #35a567;
+    text-decoration: none;
+    transition: all.4s ease;
+    -moz-transition: all.4s ease;
+    -webkit-transition: all.4s ease;
+    -ms-transition: all.4s ease;
+}
+a:active{color: #35a567}
+
+img{
+    max-width: 100%;
+    height: auto;
+    width: auto;
+}
+
+ht{
+    display: block;
+    border: 0;
+    height: 1px;
+    border-top: 1px solid #3c3c3c;
+    padding: 0;
+}
+.left{float:left}
+.right{float:right}
+.clear{clear: both}
+
+/* Блок выделения */  
+
+::selection {background:#41cb7f; color: #f0edd2 }
+::-maz-selection {background:#41cb7f; color: #f0edd2 }
+header, footer {
+    width: 98%;
+    background-color: #f0edd2;
+    float: left;
+   
+}
+
+header{
+    border-bottom: 2px solid silver;
+    padding: 1%;
+}
+
+#logo{
+font-size:1.9em;
+    font-family: Tahoma, sans-serif;
+    color: #9a9a9a;
+}
+
+.contact{
+   font-size:1.9em;
+    font-family: Tahoma, sans-serif;
+    margin-left: 20px;
+} 
+
+input[type=text].field{
+    border-radius: 5px;
+    border: 2px solid silver;
+    padding: 5px;
+    margin-left: 20px;
+}
+input[type="text"].field:focus {border: 2px solid #41cb7f;}
+  
+#menu{
+    color: #3c3c3c;
+    font-family: Century Gothic, serif;
+    font-size: 1.9em;
+}
+#menu hr{
+    width: 500px;
+    max-height: 100%;
+    margin-top: 5px;
+    margin-top: 10px;
+}
+
+#menuHrefs a{
+    padding: 3px 10px;
+    border-radius: 5px;
+    margin-right: 5px;
+    color: #3c3c3c;
+}
+#menuHrefs a:hover{
+    background-color: #ececec;
+}
+/* Основыне стили для сайта */
+#wrapper{
+    float: left;
+    width: 100%;
+    
+}
+#wrapper #articles{
+    float: left;
+    width: 80%;
+    margin-left: 10%;
+    margin-top: 20px;
+}
+#wrapper #articles article{
+    float: left;
+    border: 1px solid silver;
+    box-sizing: border-box;
+    border-radius: 5px;
+    background-color: #fafafa;
+    min-height: 400px;
+}
+@media(min-width: 900px){
+#wrapper #articles article{
+    width: 31.3333%;
+    margin-right: 2%;
+    }}
+
+@media(max-width: 899px) and (min-width: 700px){
+#wrapper #articles article{
+    width: 80%;
+    margin-left: 10%;
+    margin-bottom: 10px;
+    }}
+
+@media(max-width: 699px){
+#wrapper #articles article{
+    width: 100%;
+    margin-bottom: 10px;
+    }}
+
+#wrapper #articles article img{
+    width: 100%;
+    height: 200px;
+    border-radius: 5px 5px 0px 0px;
+    border-bottom: 1.2px solid silver;
+    margin-bottom: 10px;
+}
+
+#wrapper #articles article h2{
+    width: 90%;
+    margin-left: 5%;
+    font-weight: normal;
+    font-size: 1.7em;
+    color: #4a4a4a;
+}
+#wrapper #articles article p{
+    width: 80%;
+    margin-left: 7%;
+    color: #4a4a4a;
+    text-indent: 0.6em;
+    margin-top: 10px;
+}
+#wrapper #articles article a{
+    padding: 5px;
+    background-color: #ed7b7b;
+    margin-left: 5%;
+    border-radius: 5px;
+    color: #fff;
+    margin-top: 10px;
+    float: left;
+}
+
+#wrapper #articles article a:hover{
+    background-color: #41cb7f; 
+}
+
+/*Стили страницы о нас*/
+#about_us{
+    width: 60%;
+    float: left;
+    background-color: #fafafa;
+    border-radius: 5px;
+    border: 1px solid silver;
+    box-sizing: border-box;
+    padding: 1%;       
+}
+
+#columRight{
+    width: 30%;
+    float: left;
+    margin-left: 5%;
+    background-color: #fafafa;
+    border-radius: 5px;
+    border: 1px solid silver;
+    box-sizing: border-box;
+    padding: 1%;   
+}
+#columRight2{
+    margin: 50px ;
+    float: left;
+    margin-left: 63.3%;
+    padding: 0.4%;
+    background-color: #fafafa;
+    border-radius: 5px;
+    border: 1px solid silver;
+    box-sizing: border-box;
+
+
+}
+
+/* Cтиль для формы */
+form {
+    width: 60%;
+    margin-left: 20%;
+    float: left;   
+}
+
+form label{
+    float: left;
+    width: 100%;
+    margin-bottom: 10px;
+}
+form input{
+    border-radius: 5px;
+    border: 2px solid silver;
+    padding: 5px;
+    float: left;
+    clear: both;
+    margin-bottom: 10px;
+    width: 40%;
+    background-color: #fafafa;
+}
+form input:focus, form textarea:focus {border: 2px solid #41cb7f;}
+
+form textarea{
+    width: 60%;
+    float: left;
+    clear: both;
+    background-color: #fafafa;
+    border: 2px solid silver;
+    padding: 10px;
+    border-radius: 5px;
+    font-size: 1.2em;
+}
+
+form #send{
+    width: 15%;
+    float: left;
+    padding: 5px;
+    background-color: #41cb7f;
+    border-radius: 5px;
+    margin-top: 5px;
+    color: #fafafa;
+    cursor: pointer;
+}
+
+form #send:hover{background-color: #cb4141}
+
+/* Центральный блок сайта */
+
+#main_soc_block {
+    width: 100%;
+    padding: 2% 0;
+    border-bottom: 2px solid silver;
+    border-top: 2px solid silver;
+    margin: 20px 0;
+    float: left;
+    background: url(../img/center.png)repeat-x center;
+    height: 250px;
+}
+
+#main_soc_block_in{
+    text-align: center;
+    padding: 1%;
+    height: 120px;
+    border: 1px solid #000;
+    border-radius: 4px;
+    width: 260px;
+    margin: 6%;
+    color: #ffcc ;
+    font-size;
+    background: rgba(0,0,0,.6);
+    max-width: 89%;
+    box-sizing: border-box;
+}
+
+#main_soc_block_in a{
+    float: left;
+    padding:1px;
+    width: 180px;
+    border-radius: 4px;
+    border: 1.2px solid #45afab;
+    color: #45afab;
+    margin-left: 10%;
+    margin-top: 1%;
+}
+#main_soc_block_in a:hover{
+    background-color: #308885; 
+}
+/* Стили для футера */
+footer{
+    padding: 1%;
+    border-top: 2px solid silver;
+    margin-top: 10px;
+    padding-bottom: 2%;
+    margin-bottom: 10px;
+    
+}
+
+footer img {width: 10%;float: left; margin-right: 3px}
+
+#page-wrap:after{
+    content:"";
+    display: block;
+}
+
+footer, #page-wrap:after {height: 10px}
+
+#page-wrap{
+    min-height: 101%;
+    margin-bottom: -5%;
+}
